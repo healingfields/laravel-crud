@@ -42,6 +42,7 @@ class ProductController extends Controller
             'name'=>'required',
             'detail'=>'required'
         ]);
+        Product::create($request->all());
         return redirect()->route('products.index')
             ->with('success', 'prodcut created successfully');
     }
