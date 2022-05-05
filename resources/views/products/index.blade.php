@@ -3,7 +3,7 @@
 @section('content')
     <div>
         <h2>Laravel crud app</h2>
-        <button type="button" value="Create new Product"/>
+        <a href="{{route('products.create')}}">Create new Product</a>
     </div>
     <div class="errors">
 
